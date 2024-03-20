@@ -1,0 +1,39 @@
+'''
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+'''
+import random
+
+def jogo_doce():
+    doce = int(input("escolha um doce (1-pão de mel, 2-cri-cri, 3-pé de moleque, 4-trufa):"))
+    max_numero = 5 if doce ==1 else 10 if doce == 2 else 15
+    numero_secreto = random.randint (0, max_numero)
+    max_tentativas = 8 if doce == 1 else 6 if doce == 2 else 3
+
+    print(f"Tente adivinhar quanto açucar vai em cada doce- o {doce}")
+    print(f"Tente adivinhar a quantidade de açucar que tem, entre 0 e {max_numero}.")
+    
+    for tentativa in range (1, max_tentativas + 1):
+        palpite = int (input(f"tentativas{tentativas + 1} / {max_tentativas}. Digite seu palpite:"))
+        
+        palpite == numero_secreto
+        palpite > numero_secreto
+        palpite < numero_secreto
+        
+        if palpite == numero_secreto:
+            print(f"Parabéns! Você acertou a quantidade de açucar!! em {tentativas} tentativas.")
+            break
+        if palpite > numero_secreto:
+            print(f"Seu palpite foi maior que p número secreto.")
+            break
+        elif palpite < numero_secreto:
+            print("Seu palpite foi menor que o número secreto.")
+         
+        if not palpite == numero_secreto:
+            print(f"suas tentativas acabaram. O número secreto era: {numero_secreto})
+        print("Fim de jogo")
+            
