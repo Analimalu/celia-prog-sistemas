@@ -1,0 +1,24 @@
+/******************************************************************************
+
+Oi prof, aqui é a Ana do #J-  exercício 2 em C
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main(void)
+{
+
+    int num1;
+
+    printf("\nInforme o número: ");
+    scanf ("%d",&num1);
+
+    if (num1 % 2 == 0){
+        printf ("\nO número %d é par ",num1);
+    }else {
+        printf("\nO número %d é impar ",num1);
+    }
+  
+
+    return 0;
+}
