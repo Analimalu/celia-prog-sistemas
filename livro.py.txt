@@ -1,0 +1,26 @@
+'''
+
+Oie prof, eu sou a Ana Luiza - 3J - D.S
+
+'''
+class Livro:
+    def __init__(self, titulo, autor, paginas):
+        self.titulo = titulo
+        self.autor = autor
+        self.paginas = paginas
+        
+    def __len__(self):
+        return self.paginas
+        
+    def __str__(self):
+        return f"'{self.titulo}' por {self.autor}"
+        
+    def __eq__(self, outro):
+        return self.titulo == outro.titulo and self.autor == outro.autor
+        
+livro1 = Livro("Python para todos", "John Doe", 300)
+livro2 = Livro("Python para todos", "John Doe", 300)
+
+print(len(livro1))
+print(str(livro1))
+print(livro1 == livro2)
